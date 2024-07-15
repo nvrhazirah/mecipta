@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('img/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255,0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-card">
+        <h3 class="text-center mb-4">my<strong>Circle</strong></h3>
+        <form id="frmLogin">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="form-control" type="email" id="email"  placeholder="enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="enter password" required>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember me">Remember Me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+
+        </form>
+        <div class="row mt-3">
+            <div class="col-6">
+                <button type="button" class="btn btn-secondary btn-block" id="btnForgotPassword">Forgot Password</button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-secondary btn-block" id="btnRegister">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+   
+    <script src="js/login.js"></script>
+</body>
+</html>
